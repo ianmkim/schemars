@@ -68,6 +68,9 @@ mod chrono04;
 #[cfg(feature = "uom")]
 mod uom;
 
+#[cfg(feature = "nalgebra")]
+mod nalgebra;
+
 #[cfg(any(feature = "rust_decimal1", feature = "bigdecimal04"))]
 mod decimal;
 

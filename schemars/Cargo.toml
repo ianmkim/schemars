@@ -21,6 +21,7 @@ ref-cast = "1.0.22"
 
 # optional dependencies
 uom = {version = "0.36", optional=true, package="uom"}
+nalgebra = {version = "0.33", optional=true, package="nalgebra"}
 arrayvec07 = { version = "0.7", default-features = false, optional = true, package = "arrayvec" }
 bigdecimal04 = { version = "0.4", default-features = false, optional = true, package = "bigdecimal" }
 bytes1 = { version = "1.0", default-features = false, optional = true, package = "bytes" }
@@ -46,6 +47,7 @@ validator = { version = "0.20", features = ["derive"] }
 regex = { version = "1.10.6", default-features = false }
 
 uom = {version = "0.36", features = ["serde"], package="uom"}
+nalgebra = {version = "0.33", features=["serde"], package="nalgebra"}
 arrayvec07 = { version = "0.7", default-features = false, features = ["serde"], package = "arrayvec"}
 bigdecimal04 = { version = "0.4", default-features = false, features = ["serde"], package = "bigdecimal" }
 bytes1 = { version = "1.0", default-features = false, features = ["serde"], package = "bytes" }
