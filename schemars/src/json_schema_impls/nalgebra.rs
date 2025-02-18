@@ -1,5 +1,5 @@
 use crate::JsonSchema;
-use nalgebra::geometry::OPoint;
+use nalgebra::geometry::{Isometry, OPoint};
 use nalgebra::DefaultAllocator;
 use nalgebra::{Const, Matrix};
 
@@ -11,4 +11,8 @@ forward_impl!(
 
 forward_impl!(
     (<T: JsonSchema + nalgebra::Scalar, D:  nalgebra::DimName> JsonSchema for OPoint<T, D>  where DefaultAllocator: nalgebra::allocator::Allocator<D>) => alloc::vec::Vec<T>
+);
+
+forward_impl!(
+    (<T: JsonSchema, R, const D: usize> JsonSchema for Isometry<T, R, D>) => alloc::vec::Vec<T>
 );
