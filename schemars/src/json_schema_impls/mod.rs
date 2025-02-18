@@ -65,6 +65,9 @@ mod bytes1;
 #[cfg(feature = "chrono04")]
 mod chrono04;
 
+#[cfg(feature = "uom")]
+mod uom;
+
 #[cfg(any(feature = "rust_decimal1", feature = "bigdecimal04"))]
 mod decimal;
 
